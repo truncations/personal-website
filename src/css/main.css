@@ -1,0 +1,152 @@
+/*
+    Essential Definitions including:
+        - Fonts
+*/
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url("../../resources/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+    font-family: "Inconsolata";
+    color: #FFF8F0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    CSS coding here
+*/
+
+body {
+    background: linear-gradient(135deg, #000310, #000c20);
+    background-size:cover;
+}
+
+nav, main, .header {
+    box-shadow: black 5px 5px;
+}
+
+nav, main {
+    display: flex;
+    flex: 50%;
+    
+    background-color: #1e1e24;
+}
+
+.header, .left-padding-decorator {
+    background-color: #2c2c35; 
+}
+
+.header .header-box {
+    /* Default setup for occupied box */
+    padding: 3px 7px;
+    background-color: #40404c; 
+}
+
+#box-1 {
+    background-color: #253e7e;
+    color: black;
+}
+.header {
+    height: 1rem;
+}
+
+.header, .header-box {
+    border-bottom: 3px solid #00000033;
+    margin-bottom: -3px;
+}
+
+.main-content {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+}
+
+.left-padding-decorator {
+    min-width: 30px;
+    width: 30px;
+    height: 100%;
+}
+
+.link-button {
+    display: block;
+}
+
+.side-button {
+    margin-left: 1rem;
+}
+
+.nav-content, .actual-content {
+    padding: 20px 7px;
+}
+
+.header {
+    display: flex;
+    font-size: small;
+    justify-content: left;
+    flex-direction: row;
+    margin-bottom: 0.65rem;
+    width: auto;
+}
+
+.special-box {
+    margin-left: auto;
+}
+
+nav {
+    box-sizing: border-box;
+    flex: 0 0 160px;
+    margin-right: 0.65rem;
+    border-right: 3px dashed #FFFFFF11;
+}
+
+main {
+    box-sizing: border-box;
+}
+
+main .left-padding-decorator {
+    box-sizing: border-box;
+    border-left: 3px dashed #FFFFFF11;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 20vh auto;
+    height: 60vh;
+    width: 800px;
+}
+
+.nav-content-end {
+    margin-top: 4px;
+    font-size: 10px;
+}
+
+.ninja-star {
+    display: block;
+    position: absolute;
+    height: 100px;
+}
+
+.main-star {
+    left: calc(50vw - 455px);
+    top: calc(20vh - 55px);
+    rotate: -7deg;
+}
+
+.dark-1 {
+    left: calc(50vw - 445px);
+    top: calc(20vh - 50px);
+    rotate: -5deg;
+    opacity: 0.7;
+}
+
+.dark-2 {
+    left: calc(50vw - 435px);
+    top: calc(20vh - 45px);
+    rotate: -3deg;
+    opacity: 0.4;
+}
