@@ -4,12 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>hello world</title>
-        <link href="src/css/main.css" rel="stylesheet">
+        
+        <link href="src/css/native.css" rel="stylesheet">
+        <link href="src/css/index.css" rel="stylesheet">
+        <script src="src/js/index.js"></script>
     </head>
     <body>
         <div class = "main_gradient"></div>
         <div class="container">
             <div class="header">
+                <p id="outer-text"></p>
                 <img class="ninja-star dark-2" src="resources/images/ninja_star_dark.png"/>
                 <img class="ninja-star dark-1" src="resources/images/ninja_star_dark.png"/>
                 <img class="ninja-star main-star" src="resources/images/ninja_star.png"/>
@@ -18,16 +22,17 @@
                 <p class="header-box" id="box-1">1:afterglow.page/</p>
                 <p class="header-box">2:sad.page/</p>
                 <p class="header-box special-box">demon in my head</p>
+                <div class="border-bottom-transparent"></div>
             </div>
             <div class="main-content">
                 <nav>
                     <div class="left-padding-decorator"></div>
                     <div class="nav-content">
-                        <a class="link-button" style="color: #92140c">/home</a>
-                        <a class="link-button side-button" style="color: #ffcf99">@bout me/</a>
-                        <a class="link-button side-button">messages</a>
-                        <a class="link-button side-button">works/</a>
-                        <a class="link-button side-button">c0llection/</a>
+                        <a class="link-button" target="content-container" href="src/html/home.html" style="color: #92140c">/home</a>
+                        <a class="link-button side-button" target="content-container" style="color: #ffcf99">@bout me/</a>
+                        <a class="link-button side-button" target="content-container">messages</a>
+                        <a class="link-button side-button" target="content-container">works/</a>
+                        <a class="link-button side-button" target="content-container">c0llection/</a>
                         <p class="nav-content-end">█████████████░░░░░</p>
                         <img class="code-img" src="resources/images/code.png"/>
                     </div>
@@ -50,9 +55,8 @@
                                 #######################                                                                                                                                             <br/>
                                 #################                                                                                                                                                   <br/>                                                                                                                                <br/>
                         </div>
-                        <div class="actual-content">
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-                        </div>
+                        <iframe name="content-container" class="actual-content" src="src/html/home.html" style="border: none;"></iframe>
+
                     </div>
                 </main>
             </div>

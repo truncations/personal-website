@@ -1,0 +1,23 @@
+/*
+    Sets up the main content frame to use iframes, and to
+    have a standard for how text/others should generally look
+    for the website to have consistency
+*/
+
+main {
+    padding: 20px 7px 20px 0;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+    border-left: 2px solid #2c2c35;
+    border-right: 2px solid #2c2c35;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-left: 2px solid #2c2c35;
+    border-right: 2px solid #2c2c35;
+}

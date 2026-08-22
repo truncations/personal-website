@@ -1,0 +1,35 @@
+/*
+    Essential Definitions including:
+        - Fonts
+        - Scroll Bars Customization
+*/
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url("../../resources/fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+    font-family: "Inconsolata";
+    color: #FFF8F0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #40404c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #393944;
+}
