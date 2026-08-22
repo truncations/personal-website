@@ -33,3 +33,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #393944;
 }
+
+::-webkit-scrollbar-corner {
+    background: #2c2c35;
+}
