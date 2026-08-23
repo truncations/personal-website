@@ -20,6 +20,10 @@ body::-webkit-scrollbar-thumb {
     border: 2px solid #2c2c35;
 }
 
+li {
+    list-style-type: none;
+}
+
 li::before {
     content: "-";
     margin-right: 10px;
@@ -59,4 +63,12 @@ th, td {
 
 figcaption {
     opacity: 0.7;
+}
+
+p {
+    margin-bottom: 7px;
+}
+
+h6 {
+    margin-bottom: 14px;
 }
