@@ -44,6 +44,10 @@ nav, main {
     color: black;
 }
 
+#box-2 {
+    background-color: #d52828;
+}
+
 .main-content {
     margin-top: 0.65rem;
     display: flex;
@@ -108,6 +112,7 @@ nav, main {
 }
 
 nav {
+    display: relative;
     box-sizing: border-box;
     flex: 0 0 160px;
     margin-right: 0.65rem;
@@ -127,6 +132,7 @@ main .left-padding-decorator {
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 305px;
     
     margin: 20vh auto;
     height: 60vh;
@@ -170,6 +176,7 @@ main .left-padding-decorator {
     animation-name: main-star-entrance-ani;
     animation-duration: 0.75s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 6;
 }
 
 .dark-1 {
@@ -181,6 +188,7 @@ main .left-padding-decorator {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
+    z-index: 5;
 }
 
 .dark-2 {
@@ -192,6 +200,7 @@ main .left-padding-decorator {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-delay: 0.7s;
+    z-index: 4;
 }
 
 .code-img {
@@ -265,4 +274,21 @@ main {
     color: #24242c;
     z-index: -1;
     user-select: none;
+}
+
+nav > .left-padding-decorator::before {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 30px;
+    content: "//";
+    text-align: center;
+    opacity: 0.1;
+}
+
+.greninja {
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: -48px;
 }
