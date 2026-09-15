@@ -4,6 +4,7 @@
 
 body {
     background: linear-gradient(135deg, #000310, #000c20);
+    background-color: #000c20;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -87,8 +88,7 @@ main .left-padding-decorator {
 }
 
 #special-box {
-    width: fit-content;
-    min-width: fit-content;
+    max-width: fit-content;
     margin-left: auto;
 }
 
@@ -300,6 +300,10 @@ nav > .left-padding-decorator::before {
 
 @media (max-width: 850px)
 {
+    .greninja { 
+        height: 140px;
+        left: -27px;
+    }
     .left-padding-decorator {
         border: none;
     }
@@ -312,6 +316,7 @@ nav > .left-padding-decorator::before {
         flex-direction: column;
     }
     .container {
+        width: 70vw;
         min-width: 0px;
     }
 }
