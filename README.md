@@ -3,8 +3,6 @@ personal website revamped, created with pure CSS, HTML, and JS, and hosted on **
 
 link to website: https://extremities.neocities.org/
 
-it is a little finnicky on some smaller mobile devices, especially those with a lower width than 400 pixels.
-
 ## credits
 * W3Schools for teaching me to program in HTML/CSS and some extra techniques.
 * neocities for hosting the website for _free_
